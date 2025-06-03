@@ -72,12 +72,6 @@ python3 -m src.shortest_path --town_name NAME_OF_YOUR_TOWN_HERE
 ## License
 Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
 
-## Contact
-Kousheek Chakraborty - kousheekc@gmail.com
-
-Project Link: [https://github.com/kousheekc/Smart-Garbage-Monitoring-System](https://github.com/kousheekc/Smart-Garbage-Monitoring-System)
-
-
 ### Graph generation
 
 <img src="media/graph.png" width=640>
