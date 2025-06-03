@@ -1,11 +1,8 @@
 # Smart Garbage Monitoring System
 A system for monitoring garbage levels in garbage bins and determining the most efficient path for the garbage collection truck.
 
-In this project, I develop an end to end software solution for efficient garbage monitoring and collection in urban environments. The solution consists of an embedded electronics module that is IOT-enabled, a realtime cloud database, and a python app. Detailed build instructions can be found at the following link: [https://www.instructables.com/Smart-Garbage-Monitoring-System-Using-Internet-of-/](https://www.instructables.com/Smart-Garbage-Monitoring-System-Using-Internet-of-/). 
-
-A picture of the module and an example trajectory in my hometown is attached below.
-
-<img src="media/overview.jpg">
+In this project, I develop an end to end software solution for efficient garbage monitoring and collection in urban environments. The solution consists of an embedded electronics module that is IOT-enabled, a realtime cloud database, and a python app.
+An example trajectory in my hometown is attached below.
 
 <img src="media/trajectory1.png">
 
@@ -27,23 +24,6 @@ The complete system consists of 3 major parts:
     * ESP8266WiFi drivers
     * Firebase_ESP_Client
     * NewPing
-
-### Installation
-To install the Smart Garbage Monitoring System, install the required librarires and clone this repository using the following commands:
-
-```
-pip install firebase-admin
-pip install pygame
-git clone https://github.com/kousheekc/Smart-Garbage-Monitoring-System.git
-```
-
-If you decide to use an ESP8266, you will need the required board drivers. Open the Arduino IDE, go to **File -> Preferences** and paste the following link **https://arduino.esp8266.com/stable/package_esp8266com_index.json** in the **Additional boards manager URLS** section. Next, go to **Tools -> Board -> Boards Manager** and search for **ESP8266** and install the drivers.
-
-To install the arduino libraries, open the Arduino IDE, go to **Sketch -> Include Library -> Manage Libraries** and search and install the following libraries:
-* Firebase Arduino Client Library for ESP8266 and ESP32
-* NewPing
-
-You will also need to create a new realtime database on firebase since I have not made mine public. Instructions can be found at the following link: [https://firebase.google.com/docs/database](https://firebase.google.com/docs/database)
 
 ## Usage
 The first step is to generate the graph of the town where the nodes represent either interesections, bins or the garage and the edges represent the roads. To do this, add a new directory containing a screenshot of your town to the **data/maps** directory. Refer to the existing example.
